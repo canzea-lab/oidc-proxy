@@ -10,5 +10,6 @@ RUN luarocks install lua-resty-openidc
 RUN luarocks install inspect
 
 EXPOSE 80
+EXPOSE 443
 
 ENTRYPOINT ["/usr/local/openresty/nginx/sbin/nginx", "-g", "daemon off;"]
