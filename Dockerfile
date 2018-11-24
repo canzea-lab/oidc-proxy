@@ -9,4 +9,6 @@ RUN luarocks install lua-resty-jwt
 RUN luarocks install lua-resty-openidc
 RUN luarocks install inspect
 
+EXPOSE 80
+
 ENTRYPOINT ["/usr/local/openresty/nginx/sbin/nginx", "-g", "daemon off;"]
